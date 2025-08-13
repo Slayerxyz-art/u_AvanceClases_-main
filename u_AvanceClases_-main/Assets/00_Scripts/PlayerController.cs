@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
    private void OnEnable()
    {
        playerControls.Gameplay.Enable();
+       
+       
    }
 
    private void OnDisable()

@@ -464,6 +464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8657412874122888189, guid: b3f0a0770fa85f1469319660278e9ebe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -747,6 +751,7 @@ GameObject:
   - component: {fileID: 1097813954}
   - component: {fileID: 1097813953}
   - component: {fileID: 1097813952}
+  - component: {fileID: 1097813956}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -843,6 +848,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374718971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1097813956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097813951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69ef55cdca3312b4f88b62459b70e427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2121854671
 GameObject:
   m_ObjectHideFlags: 0
