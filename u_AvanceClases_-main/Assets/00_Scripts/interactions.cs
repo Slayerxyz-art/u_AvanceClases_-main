@@ -1,23 +1,17 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class interactions : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        Debug.Log("este es el start");
-    }
+    private bool key1 = false;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("este es el update");
-        Application.targetFrameRate = 60;
+        if (other.CompareTag("NPC1"))
+        {
+            Debug.Log("chocó el Player conmigo");
+            key1 = true;
 }
 
-    private void FixedUpdate()
-    {
-        Debug.Log("este es el fixed");
-    }
-}
+
