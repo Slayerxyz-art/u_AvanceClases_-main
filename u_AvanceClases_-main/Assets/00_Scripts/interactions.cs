@@ -35,8 +35,16 @@ public class interactions : MonoBehaviour
         }
         */
     private void OnTriggerEnter(Collider other)
-    {
-        switch (other.tag)
+    {   switch (other.tag)
+        {
+     [SerializeField] private bool key1 = false;
+    [SerializeField] private bool key2 = false;
+    [SerializeField] private GameObject door;
+    private Animator animatordoor;
+    
+    private void start()
+}
+      
         {
             case "npc1":
                 Debug.Log("Obtuve la llave 1.");
@@ -46,10 +54,15 @@ public class interactions : MonoBehaviour
                 Debug.Log("Obtuve la llave 2.");
                 key2 = true;
                 break;
-                
+                case "Door":
+                    Debug.Log("Abrí la puerta");
+                    AnimatorDoor.setbool("Anim_Door", true);
+                    break;
 
 
         }
     }
+    
+    Ontrigger
 }
 
