@@ -8,6 +8,7 @@ using Debug = UnityEngine.Debug;
 public class interactions : MonoBehaviour
 {
     private bool key1 = false;
+    private bool key2 = false;
 
     /*
     private void OnTriggerEnter(Collider other)  // al ingresar a un collider
@@ -16,18 +17,18 @@ public class interactions : MonoBehaviour
         {
             Debug.Log("chocó el player conmigo");
             key1 = true;
-            
+
             if (other.CompareTag("NPC2")) // así obtengo la llave 2
-                
+
                 Debug.Log?("conseguí la llave")
             key2 = true;
-            
+
 }
-    
+
 
         {
             if (other.CompareTag("NPC2")) // así obtengo la llave 2
-        }  
+        }
         {
            Debug.Log?("conseguí la llave")
                key2 = true;
@@ -35,14 +36,20 @@ public class interactions : MonoBehaviour
         */
     private void OnTriggerEnter(Collider other)
     {
-       Switch (other.tag) 
-       {
-           case"npc1":
-               Debug.Log"Obtuve la llave 1.");
-               key1 = true;
-               Break;
-               case "NPC2");
-               
-       }
+        switch (other.tag)
+        {
+            case "npc1":
+                Debug.Log("Obtuve la llave 1.");
+                key1 = true;
+                break;
+            case "NPC2":
+                Debug.Log("Obtuve la llave 2.");
+                key2 = true;
+                break;
+                
+
+
+        }
     }
+}
 
